@@ -1,0 +1,18 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th>序号</th>
+            <th>用户名</th>
+            <th>手机号码</th>
+            <th>昵称</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat='item in items'>
+            <td>{{$index + 1}}</td>
+            <td><a href="#/detail/{{item.name}}">{{item.name}}</a></td>
+            <td>{{item.userPhone}}</td>
+            <td>{{item.userNickname}}</td>
+        </tr>
+    </tbody>
+</table>
